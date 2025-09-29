@@ -44,20 +44,21 @@
 
 <!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
 
-		<header style="background-color:plum; padding-top:70px; "> 
+		<header  style="background-image: url('16-162073_jellyfish-background.jpg'); padding-top:70px; "> 
 			<div class="container"> 
 				<div class="row">
-					<div class="col-md-4">
-						<br><br>
+					<div class="col-md-4" style="background-color:rgba(0, 0, 0, 0.4); margin:20px 20px 40px 20px;">
+						<br>
 <!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
-						<h1>Саша Уварова aka Fizzy</h1>
+						<h1 style="color:rgba(255, 255, 255, 1)";>Саша Уварова</h1> <p style="color:rgba(255, 255, 255, 1)";><i>(aka Fizzy)</i></p>
 						<hr> <!-- это горизонтальная линия -->
-						<p><i>Человек, умеющий <b>создавать</i> HTML</b></p> 
+						<p><i style="color:rgba(255, 255, 255, 1)">"The glory of creation is in its infinite diversity and the ways our differences combine to create meaning and beauty." (Star Trek: TOS, S3E5)</i></p> 
+						<br>
 					</div>
 					<div class="col-md-4">
 <!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
 <!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
-<img src="myphoto.jpg" style="height:320px; margin:20px 20px 40px 20px; " >
+<img src="-2147483648_-224188.jpg" style="height:320px; margin:20px 20px 40px 20px; " >
 					</div>
 				</div>
 			</div>
@@ -68,46 +69,91 @@
 			<div class="container">
 
 <!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
-				<div class="col-md-3">
+				<div class="col-md-4">
 
 <!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
 					<article>
-						<h3>Место учебы</h3>
-						<p>Фундаментальная и прикладная лингвистика, НИУ ВШЭ, Москва</p>
+						<h3><img src="university_icon.PNG" style="height:30px;">&nbsp;Место учебы</h3>
+						<p>ФиКЛ, НИУ ВШЭ, Москва</p>
 					</article>
 					<article>
-						<h3>Родной город</h3>
-						<p>Москва</p>
+						<h3><img src="town_icon.PNG" style="height:30px;">&nbsp;Родной город</h3>
+						<p>Королёв, МО</p>
 					</article>
 					<article>
-						<h3>Школа</h3>
+						<h3><img src="book_icon.PNG" style="height:30px;">&nbsp;Школа</h3>
 <!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
-						<p>СУНЦ НГУ</p>
+						<p>Гимназия №11</p>
 					</article>
 				</div>
 
-				<div class="col-md-6">
+				<div class="col-md-5">
 					<article>
-						<h3>Тут можно написать</h3>
-						<p>Еще много много много много много много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						всего о себе</p>
+						<h3><img src="heart_icon.PNG" style="height:30px;"> Хобби и увлечения</h3>
+						 
+						<details>
+						<!-- https://stackoverflow.com/questions/67495928/missing-disclosure-triangle-when-using-the-summary-tag -->
+							<summary style="display:list-item"> <b>Чем я люблю заниматься в свободное время</b> </summary>
+							<ul>
+								<li>Рисование</li>
+								<li>Игра на фортепиано</li>
+								<li>Видеоигры</li>
+								<li>Сериалы</li>
+								<li>Музыка</li>
+								<li>Прогулки на природе</li>
+								<li>Journaling</li>
+								<li>Stargazing</li>
+							</ul>
+						</details>
+						
+						<details>
+							<summary style="display:list-item"> <b>Мои любимые сериалы/фильмы</b> </summary>
+							<ul>
+								<li><i>Star Trek (all-time favourite!)</i></li>
+								<li>Breaking bad</li>
+								<li>Better Call Saul</li>
+							</ul>
+						</details>
+						
+						<details>
+							<summary style="display:list-item"> <b>Мои любимые игры</b> </summary>
+							<ul>
+								<li><i>Outer Wilds (all-time favourite!)</i></li>
+								<li>Deltarune</li>
+								<li>Yume Nikki</li>
+								<li>Animal Crossing (New Leaf + New Horizons)</li>
+								<li>ENA: Dream BBQ</li>
+								<li>Amanita Design games: Machinarium, Botanicula, Samorost (1, 2, 3)</li>
+								<li>Celeste</li>
+								<li>Phoenix Wright: Ace attorney trilogy</li>
+								<li>Minecraft</li>
+								<li>Terraria</li>
+								
+							</ul>
+						</details>
+						
+						<b style="padding-left:1.15em">Мой <a href="https://t.me/fizzy_music_collection">плейлист</a> (telegram)</b>
+						
+						<details>
+							<summary style="display:list-item"> <b>Fun facts!</b> </summary>
+							<ul>
+								<li>I have a CAE C2 certificate :D</li>
+								<li>У меня есть кошка:</li>
+								<img src="bunger.jpg" style="height:200px"> <br>
+								Её зовут Рябинка :)
+								<li>Каждый август мы с сиблингом выбираемся на улицу ночью, чтобы посмотреть на Персеиды! Это очень весело и атмосферно</li>
+							</ul>
+						</details>
+						
 					</article>
 				</div>
 
 				<div class="col-md-3">
-					<h3>Я в соцсетях</h3>
+					<h3><img src="sun_icon.PNG" style="height:30px;">&nbsp;Я в соцсетях</h3>
 <!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
 					<ul>
-						<li>VK</li>
-						<li>Discord</li>
-						<li>Telegram</li>
+						<li>Рисунки и прочее в  <a href="https://bsky.app/profile/fizzygrapedrink.bsky.social">Bluesky</a></li>
+						<li>Мой контакт в <a href="https://t.me/sparklygrapewater">Telegram</a></li>
 					</ul>
 				</div>
 			</div>
@@ -116,7 +162,7 @@
 <!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
 		<footer class="bs-docs-footer"> 
 			<div class="container"> 
-				<p style="text-align:right; ">&copy; В. Кузнецова, 2024</p> 
+				<p style="text-align:right; ">&copy; А. Уварова, 2025</p> 
 			</div>
 		</footer>
 	</body>
